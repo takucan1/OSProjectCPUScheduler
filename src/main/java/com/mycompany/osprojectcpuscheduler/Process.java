@@ -6,8 +6,24 @@ package com.mycompany.osprojectcpuscheduler;
 
 /**
  *
- * @author Takucan
+ * @Aledon&Tipactipac
  */
 public class Process {
-    
+    public String id;
+    public int arrivalTime;
+    public int burstTime;
+    public int remainingTime;
+    public int completionTime;
+    public int turnaroundTime;
+    public int responseTime;
+    public int startTime = -1;
+    public int queueLevel = -1; 
+
+    public Process(String id, int arrivalTime, int burstTime) {
+        this.id = id;
+        this.arrivalTime = arrivalTime;
+        this.burstTime = burstTime;
+        this.remainingTime = burstTime;
+    }
 }
+

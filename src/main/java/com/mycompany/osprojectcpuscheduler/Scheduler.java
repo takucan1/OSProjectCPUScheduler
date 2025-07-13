@@ -6,8 +6,15 @@ package com.mycompany.osprojectcpuscheduler;
 
 /**
  *
- * @author Takucan
+ * @Aledon&Tipactipac
  */
-public class Scheduler {
-    
+import java.util.List;
+
+public interface Scheduler {
+    void schedule(List<Process> processes);
+    List<String> getGanttChart();
+    void printMetrics(List<Process> processes);
+    double getAverageTurnaroundTime(List<Process> processes);
+    double getAverageResponseTime(List<Process> processes);
 }
+
